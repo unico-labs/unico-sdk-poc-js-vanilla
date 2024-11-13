@@ -1,3 +1,20 @@
+
+<p align='center'>
+  <a href='https://unico.io'>
+    <img width='350' src='https://unico.io/wp-content/uploads/2022/07/check.svg'></img>
+  </a>
+</p>
+
+<h1 align='center'>SDK Web Vanilla</h1>
+
+<div align='center'>
+
+
+
+# Instalação de Resources 
+
+- Link para o download dos arquivos resources refentes a versão utilizada e SDk(deve substituir o UnicoCheckBuilder para a versão equivalente) https://developers.unico.io/docs/check/SDK/web/instalacaoWebSDK
+
 # Instruções PHP
 
 Para iniciar o server PHP
@@ -32,3 +49,5 @@ http-server
 
 Versão usada nos testes
 v14.20.0
+
+
