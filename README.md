@@ -5,7 +5,7 @@
   </a>
 </p>
 
-<h1 align='center'>SDK Flutter</h1>
+<h1 align='center'>SDK Web Vanilla</h1>
 
 <div align='center'>
 
