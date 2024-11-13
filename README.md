@@ -13,7 +13,7 @@
 
 # Instalação de Resources 
 
-- Link para o download dos arquivos resources refentes a versão utilizada e SDk(deve substituir o UnicoCheckBuilder para a versão equivalente) <a href='https://developers.unico.io/docs/check/SDK/web/instalacaoWebSDK'
+- Link para o download dos arquivos resources refentes a versão utilizada e SDk(deve substituir o UnicoCheckBuilder para a versão equivalente) https://developers.unico.io/docs/check/SDK/web/instalacaoWebSDK
 
 # Instruções PHP
 
