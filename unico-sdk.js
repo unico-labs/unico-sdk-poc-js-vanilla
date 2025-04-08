@@ -1,4 +1,4 @@
-import { UnicoCheckBuilder, SelfieCameraTypes, UnicoThemeBuilder, DocumentCameraTypes } from './UnicoCheckBuilder.min.js'
+import { UnicoCheckBuilder, SelfieCameraTypes, UnicoThemeBuilder, UnicoConfig, SDKEnvironmentTypes, DocumentCameraTypes } from './UnicoCheckBuilder.min.js'
 
 var callback = {
     on: {
@@ -14,9 +14,17 @@ var callback = {
     }
 };
 
+const config = new UnicoConfig()
+
+.setHostname("<YOUR_HOSTNAME>")
+
+.setHostKey("YOUR_HOST_KEY>");
+
 const unicoCameraBuilder = new UnicoCheckBuilder();
     unicoCameraBuilder.setResourceDirectory('/resources');
     unicoCameraBuilder.setModelsPath('/models');
+    unicoCameraBuilder.setEnvironment(SDKEnvironmentTypes.UAT)
+
 
 const unicoTheme = new UnicoThemeBuilder()
     .build();
@@ -24,7 +32,7 @@ const unicoTheme = new UnicoThemeBuilder()
 unicoCameraBuilder.setTheme(unicoTheme);
 
 const unicoCamera = unicoCameraBuilder.build();
-const cameraPromised = unicoCamera.prepareSelfieCamera('/services.json', SelfieCameraTypes.SMART);
+const cameraPromised = unicoCamera.prepareSelfieCamera(config, SelfieCameraTypes.SMART);
     cameraPromised.then(cameraOpener => cameraOpener.open(callback))
 
 function createProcess(unico)
